@@ -1,0 +1,13 @@
+def time_to_coincide(hour):
+    # Calculate the minutes at which the hands coincide
+    t = (60 * hour) / 11
+    return t
+
+# Input: the current hour in 24-hour format
+hour = float(input("Enter the hour (in 24-hour format): "))
+
+# Calculate the time in minutes at which the hands coincide in the next hour
+minutes_to_coincide = time_to_coincide(hour % 12)
+
+# Output the result
+print(f"The hands coincide at {minutes_to_coincide:.2f} minutes past {hour % 12} o'clock in the next hour.")
