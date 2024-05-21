@@ -1,0 +1,11 @@
+def is_perfect_square(num):
+    # Check if the square root of the number is an integer
+    square_root = num ** 0.5
+    return square_root.is_integer()
+
+# Example usage
+number = int(input("Enter a number: "))
+if is_perfect_square(number):
+    print(f"{number} is a perfect square.")
+else:
+    print(f"{number} is not a perfect square.")
